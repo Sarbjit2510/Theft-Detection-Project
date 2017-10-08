@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mActivity.LoginActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/building_illustration_full">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.pragyaware.sarbjit.jkpddapp.mUtil.FontTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="@string/login_to"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.pragyaware.sarbjit.jkpddapp.mUtil.FontTextViewThin
+                android:id="@+id/tv_theft_detection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/theft_detection_app"
+                android:textColor="@color/red_background"
+                android:textSize="26sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="40dp"
+                    android:layout_height="5dp"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/village_illustration">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:src="@drawable/login" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/rl_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <com.pragyaware.sarbjit.jkpddapp.mUtil.FontTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/user"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                    <com.pragyaware.sarbjit.jkpddapp.mUtil.FontTextInputRegular
+                        android:id="@+id/input_layout_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp">
+
+                        <EditText
+                            android:id="@+id/phone_edtVw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:alpha="80"
+                            android:backgroundTint="@color/black"
+                            android:hint="@string/mobile_no"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textAlignment="textStart"
+                            android:textColorHint="#2d3047"
+                            android:textSize="15sp" />
+
+                    </com.pragyaware.sarbjit.jkpddapp.mUtil.FontTextInputRegular>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <com.pragyaware.sarbjit.jkpddapp.mUtil.FontTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/padlock"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                    <com.pragyaware.sarbjit.jkpddapp.mUtil.FontTextInputRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp">
+
+                        <EditText
+                            android:id="@+id/pass_edtVw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:alpha="80"
+                            android:backgroundTint="@color/black"
+                            android:hint="@string/enter_password"
+                            android:inputType="textPassword"
+                            android:maxLength="15"
+                            android:textAlignment="textStart"
+                            android:textColorHint="#2d3047"
+                            android:textSize="15sp" />
+
+                    </com.pragyaware.sarbjit.jkpddapp.mUtil.FontTextInputRegular>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_red"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

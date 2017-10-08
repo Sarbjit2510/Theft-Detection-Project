@@ -1,0 +1,23 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=41:DA:C2:7F:F3:7E:54:8B:30:37:B3:F8:B1:F3:60:A9:7A:93:E0:9B%3Bcom.pragyaware.gvatracker
+
+    You can also add your credentials to an existing key, using this line:
+    41:DA:C2:7F:F3:7E:54:8B:30:37:B3:F8:B1:F3:60:A9:7A:93:E0:9B;com.pragyaware.gvatracker
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <!--AIzaSyBpluZX5y1hVDtgDcAWsY8-KN9gImAXPVQ-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDuAXyziOWA77oTmBys4-QeH5_e1_2KBxc</string>
+</resources>
+
+
+    <!-- D1:93:5C:CF:12:50:1D:EE:D9:09:85:31:32:CF:FC:6D:48:34:3C:A2;com.pragyaware.gvatracker-->
